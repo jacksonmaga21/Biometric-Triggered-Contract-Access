@@ -1,0 +1,38 @@
+[project]
+name = 'Biometric-Triggered-Contract-Access'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Biometric-Triggered]
+path = 'contracts/Biometric-Triggered.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.Oracle-Performance-Analytics]
+path = 'contracts/Oracle-Performance-Analytics.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.Oracle-Staking]
+path = 'contracts/Oracle-Staking.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.Oracle-Consensus]
+path = 'contracts/Oracle-Consensus.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
